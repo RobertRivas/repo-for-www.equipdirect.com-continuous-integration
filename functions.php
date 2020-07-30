@@ -42,6 +42,18 @@ function storefront_credit() {
     <?php
 }
 
+// This section removes pricing from displaying on out of stock items.
+
+add_filter( "woocommerce_variable_sale_price_html", "theanand_remove_prices", 10, 2 );
+add_filter( "woocommerce_variable_price_html", "theanand_remove_prices", 10, 2 );
+add_filter( "woocommerce_get_price_html", "theanand_remove_prices", 10, 2 );
+
+function theanand_remove_prices( $price, $product ) {
+    if ( ! $product->is_in_stock()) {
+        $price = "";
+    }
+    return $price;
+}
 
 // uncomment if would like to change social media icons 
 
