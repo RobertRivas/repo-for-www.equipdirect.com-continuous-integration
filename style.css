@@ -608,7 +608,7 @@ a:focus,
 input:focus,
 textarea:focus,
 button:focus {
-  outline: 2px solid #96588a; }
+  outline: 2px solid rgb(0, 209, 87); }
 
 .storefront-cute * {
   font-family: 'Comic Sans MS', sans-serif; }
@@ -2237,4 +2237,6 @@ button.menu-toggle {
       .widget_nav_menu ul li::before {
         content: "\f111";
     }
+
+    
     
