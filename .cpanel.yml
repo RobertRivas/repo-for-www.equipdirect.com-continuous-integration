@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home4/firstak0/public_html/wp-content/themes/storefront-child-theme-master/
+    - export DEPLOYPATH=/home5/equipd5/public_html/wp-content/themes/storefront-child-theme-master/
     - /bin/cp -R * $DEPLOYPATH
